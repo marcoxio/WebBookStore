@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DAWXoSJqVikvgbAXy/Dyxi3W/1DKriMUf4MpA2w9mEUohBk+X+ZERwCJoo+Izakir89ChUcroYjo2Awit0gKwg==",
+  "dgSpecHash": "gYFYZcZJAep3U0OWRKnpS6FtY7WJ1qjCsRr1kMZ5i3tWa5AN+eVovHgoNf6RJXY80gx1/OEPiz09X3b677Yf2g==",
   "success": true,
-  "projectFilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj",
+  "projectFilePath": "C:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\manji\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\manji\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
