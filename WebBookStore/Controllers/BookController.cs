@@ -9,14 +9,14 @@ namespace WebBookStore.Controllers
     {
         private readonly BookRepository _bookRepository = null;
 
-        public BookController(BookRepository bookRepository)
+        public BookController()
         {
-            _bookRepository=bookRepository;
+            _bookRepository= new BookRepository();
         }
         public ViewResult GetAllBooks()
         {
             var data = _bookRepository.GetAllBooks();
-            return View();
+            return View(data);
         }
 
         public BookModel GetBook(int id)
