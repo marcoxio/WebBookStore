@@ -109,3 +109,15 @@ C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.1\WebBookStore.Views.dll
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.1\WebBookStore.Views.pdb
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\WebBookStore.RazorAssemblyInfo.cache
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\WebBookStore.RazorAssemblyInfo.cs
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\WebBookStore.TagHelpers.input.cache
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\WebBookStore.TagHelpers.output.cache
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\WebBookStore.RazorCoreGenerate.cache
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\WebBookStore.RazorTargetAssemblyInfo.cs
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\WebBookStore.Views.pdb
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\Books\GetallBooks.cshtml.g.cs
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutUs.cshtml.g.cs

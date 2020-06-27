@@ -20519,6 +20519,22 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "WebBookStore",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Home\\AboutUs.cshtml",
+      "TargetPath": "Views\\Home\\AboutUs.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Books\\GetallBooks.cshtml",
+      "TargetPath": "Views\\Books\\GetallBooks.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
