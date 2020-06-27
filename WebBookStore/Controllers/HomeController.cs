@@ -9,7 +9,12 @@ namespace WebBookStore.Controllers
             return View();
         }
 
-           public ViewResult AboutUs()
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+
+        public ViewResult ContactUs()
         {
             return View();
         }
