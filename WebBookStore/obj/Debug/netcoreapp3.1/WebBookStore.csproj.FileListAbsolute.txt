@@ -397,3 +397,4 @@ C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\WebBookStore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs

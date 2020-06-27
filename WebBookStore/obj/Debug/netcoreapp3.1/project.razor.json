@@ -20531,6 +20531,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Home\\ContactUs.cshtml",
+      "TargetPath": "Views\\Home\\ContactUs.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Books\\GetallBooks.cshtml",
       "TargetPath": "Views\\Books\\GetallBooks.cshtml",
       "FileKind": "mvc"
