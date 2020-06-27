@@ -18,7 +18,10 @@ namespace WebBookStore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
+#if DEBUG
+            //Dont need Run everywhere program only refresh page for changes
+            services.AddRazorPages().AddRazorRuntimeCompilation();
+#endif
             
         }
 
