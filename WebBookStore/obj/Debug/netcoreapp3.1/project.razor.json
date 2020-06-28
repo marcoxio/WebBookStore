@@ -20531,6 +20531,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Home\\AboutUs.cshtml",
       "TargetPath": "Views\\Home\\AboutUs.cshtml",
       "FileKind": "mvc"
