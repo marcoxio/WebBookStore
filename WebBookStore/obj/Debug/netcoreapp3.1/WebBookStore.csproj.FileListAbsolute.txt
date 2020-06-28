@@ -400,3 +400,5 @@ C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\Book\GetAllBooks.cshtml.g.cs
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
 C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\Book\GetBook.cshtml.g.cs
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\manji\OneDrive\Documentos\BookStore\WebBookStore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
