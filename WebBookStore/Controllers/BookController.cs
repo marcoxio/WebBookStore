@@ -9,12 +9,12 @@ namespace WebBookStore.Controllers
     {
         private readonly BookRepository _bookRepository = null;
 
-        public BookController()
+        public BookController(BookRepository bookRepository)
         {
-            _bookRepository= new BookRepository();
+            _bookRepository= bookRepository;
         }
 
-        public ViewResult GetAllBooks()
+        public IActionResult GetAllBooks()
         {
             var data = _bookRepository.GetAllBooks();
             return View(data);
@@ -22,7 +22,7 @@ namespace WebBookStore.Controllers
         
         [HttpGet("{id}")]
         [Route("book-details/{id}", Name ="bookDetailsRoute")]
-        public ViewResult GetBook(int id)
+        public IActionResult GetBook(int id)
         {
             var data = _bookRepository.GetBookById(id);
             return View(data);
@@ -36,15 +36,22 @@ namespace WebBookStore.Controllers
         }
 
         [HttpGet]
-         public ViewResult AddNewBook()
+         public IActionResult AddNewBook(bool isSuccess = false, int bookId = 0)
         {
+            ViewBag.IsSuccess = isSuccess;
+            ViewBag.BookId = bookId;
             return View();
         }
 
 
         [HttpPost]
-        public ViewResult AddNewBook(BookModel bookModel)
+        public IActionResult AddNewBook(BookModel bookModel)
         {
+            int id =_bookRepository.AddNewBook(bookModel);
+            if (id > 0)
+            {
+                return RedirectToAction(nameof(AddNewBook), new { isSuccess = true, bookId = id });
+            }
             return View();
         }
     }

@@ -24,10 +24,13 @@ namespace WebBookStore
                 options =>options.UseSqlServer("Data Source=localhost\\sqlexpress;Initial Catalog=BookStore;Integrated Security=True;"));
             
             services.AddControllersWithViews();
+
 #if DEBUG
             //Dont need Run everywhere program only refresh page for changes
             services.AddRazorPages().AddRazorRuntimeCompilation();
+
 #endif
+            services.AddScoped<BookRepository, BookRepository>();
             
         }
 
