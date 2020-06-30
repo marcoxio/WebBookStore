@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kMwOhDfm1OzD452wFNeS/jVgqraQRY4uIghzBDgaqHBhxnWSef28cIKIFiPbWkbhigzoUg9A82pKN6gN0muINQ==",
+  "dgSpecHash": "/20MQQH4Wvto0iSwnJ/v4T0CuiCOqlCWkzTcE9fcJiqttQkw39ETEi//8mAeGAOROA9eVf/2xkh1fsYVLmPA8w==",
   "success": true,
-  "projectFilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj",
+  "projectFilePath": "C:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\manji\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\manji\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

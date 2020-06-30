@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj": {}
+    "C:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj": {}
   },
   "projects": {
-    "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj": {
+    "C:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj",
+        "projectUniqueName": "C:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj",
         "projectName": "WebBookStore",
-        "projectPath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj",
+        "projectPath": "C:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\WebBookStore.csproj",
         "packagesPath": "C:\\Users\\manji\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\obj\\",
+        "outputPath": "C:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\manji\\AppData\\Roaming\\NuGet\\NuGet.Config",
