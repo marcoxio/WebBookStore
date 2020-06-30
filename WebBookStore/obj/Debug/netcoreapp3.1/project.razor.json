@@ -20559,6 +20559,11 @@
       "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\manji\\OneDrive\\Documentos\\BookStore\\WebBookStore\\Views\\Book\\AddNewBook.cshtml",
+      "TargetPath": "Views\\Book\\AddNewBook.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

@@ -13,12 +13,14 @@ namespace WebBookStore.Controllers
         {
             _bookRepository= new BookRepository();
         }
+
         public ViewResult GetAllBooks()
         {
             var data = _bookRepository.GetAllBooks();
             return View(data);
         }
         
+        [HttpGet("{id}")]
         [Route("book-details/{id}", Name ="bookDetailsRoute")]
         public ViewResult GetBook(int id)
         {
@@ -26,10 +28,24 @@ namespace WebBookStore.Controllers
             return View(data);
         }
 
+        [HttpGet]
         public List<BookModel> SearchBooks(string bookName,string authorName)
         {
             // return $"Boom with name = {bookName} & Author = {authorName}";
             return _bookRepository.SearchBook(bookName, authorName);
+        }
+
+        [HttpGet]
+         public ViewResult AddNewBook()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ViewResult AddNewBook(BookModel bookModel)
+        {
+            return View();
         }
     }
 }
