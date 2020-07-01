@@ -23,9 +23,9 @@ namespace WebBookStore.Controllers
         
         [HttpGet("{id}")]
         [Route("book-details/{id}", Name ="bookDetailsRoute")]
-        public IActionResult GetBook(int id)
+        public async Task<IActionResult> GetBook(int id)
         {
-            var data = _bookRepository.GetBookById(id);
+            var data = await _bookRepository.GetBookById(id);
             return View(data);
         }
 
