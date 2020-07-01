@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using WebBookStore.Data;
 using WebBookStore.Models;
 
@@ -14,7 +15,7 @@ namespace WebBookStore.Repository
             _context = context;
         }
 
-        public int AddNewBook(BookModel model)
+        public async Task<int> AddNewBook(BookModel model)
         {
             var newBook = new Books()
             {
@@ -26,8 +27,8 @@ namespace WebBookStore.Repository
                 UpdatedOn = DateTime.UtcNow
             };
 
-            _context.Books.Add(newBook);
-            _context.SaveChanges();
+            await _context.Books.AddAsync(newBook);
+            await _context.SaveChangesAsync();
 
             return newBook.Id;
         }
