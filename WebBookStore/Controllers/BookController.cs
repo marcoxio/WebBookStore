@@ -57,6 +57,8 @@ namespace WebBookStore.Controllers
                 }
             }
 
+            ModelState.AddModelError("", "This is my custom error message");
+            ModelState.AddModelError("", "This is my second custom error message");
             return View();
         }
     }
