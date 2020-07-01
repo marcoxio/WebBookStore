@@ -12,7 +12,7 @@ namespace WebBookStore.Controllers
 
         public BookController(BookRepository bookRepository)
         {
-            _bookRepository= bookRepository;
+            _bookRepository = bookRepository;
         }
 
         public async Task<IActionResult> GetAllBooks()
@@ -20,9 +20,9 @@ namespace WebBookStore.Controllers
             var data = await _bookRepository.GetAllBooks();
             return View(data);
         }
-        
+
         [HttpGet("{id}")]
-        [Route("book-details/{id}", Name ="bookDetailsRoute")]
+        [Route("book-details/{id}", Name = "bookDetailsRoute")]
         public async Task<IActionResult> GetBook(int id)
         {
             var data = await _bookRepository.GetBookById(id);
@@ -30,14 +30,14 @@ namespace WebBookStore.Controllers
         }
 
         [HttpGet]
-        public List<BookModel> SearchBooks(string bookName,string authorName)
+        public List<BookModel> SearchBooks(string bookName, string authorName)
         {
             // return $"Boom with name = {bookName} & Author = {authorName}";
             return _bookRepository.SearchBook(bookName, authorName);
         }
 
         [HttpGet]
-         public IActionResult AddNewBook(bool isSuccess = false, int bookId = 0)
+        public IActionResult AddNewBook(bool isSuccess = false, int bookId = 0)
         {
             ViewBag.IsSuccess = isSuccess;
             ViewBag.BookId = bookId;
@@ -48,11 +48,15 @@ namespace WebBookStore.Controllers
         [HttpPost]
         public async Task<IActionResult> AddNewBook(BookModel bookModel)
         {
-            int id = await _bookRepository.AddNewBook(bookModel);
-            if (id > 0)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(AddNewBook), new { isSuccess = true, bookId = id });
+                int id = await _bookRepository.AddNewBook(bookModel);
+                if (id > 0)
+                {
+                    return RedirectToAction(nameof(AddNewBook), new { isSuccess = true, bookId = id });
+                }
             }
+
             return View();
         }
     }
