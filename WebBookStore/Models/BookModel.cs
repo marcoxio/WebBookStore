@@ -11,7 +11,7 @@ namespace WebBookStore.Models
         public string Title { get; set; }
         [Required(ErrorMessage="Please enter the author name")]
         public string Author { get; set; }
-        [StringLength(500, ErrorMessage="")]
+        [StringLength(500)]
         public string Description { get; set; }
         public string Category { get; set; }
         public string Language { get; set; }
