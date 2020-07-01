@@ -15,9 +15,9 @@ namespace WebBookStore.Controllers
             _bookRepository= bookRepository;
         }
 
-        public IActionResult GetAllBooks()
+        public async Task<IActionResult> GetAllBooks()
         {
-            var data = _bookRepository.GetAllBooks();
+            var data = await _bookRepository.GetAllBooks();
             return View(data);
         }
         

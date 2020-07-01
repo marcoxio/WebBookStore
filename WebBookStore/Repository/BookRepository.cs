@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using WebBookStore.Data;
 using WebBookStore.Models;
 
@@ -32,9 +33,27 @@ namespace WebBookStore.Repository
 
             return newBook.Id;
         }
-        public List<BookModel> GetAllBooks()
+        public async Task<List<BookModel>> GetAllBooks()
         {
-            return DataSource();
+            var books = new List<BookModel>();
+            var allBooks = await _context.Books.ToListAsync();
+          if (allBooks?.Any() == true)
+            {
+                foreach (var book in allBooks)
+                {
+                    books.Add(new BookModel()
+                    {
+                        Author = book.Author,
+                        Category = book.Category,
+                        Description = book.Description,
+                        Id = book.Id,
+                        Language = book.Language,
+                        Title = book.Title,
+                        TotalPages = book.TotalPages
+                    });
+                }
+            }
+            return books;
         }
 
         public BookModel GetBookById(int id)
