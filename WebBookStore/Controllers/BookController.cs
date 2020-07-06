@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WebBookStore.Models;
 using WebBookStore.Repository;
 
@@ -39,9 +41,24 @@ namespace WebBookStore.Controllers
         [HttpGet]
         public IActionResult AddNewBook(bool isSuccess = false, int bookId = 0)
         {
-             var model = new BookModel()
+              var model = new BookModel()
+             {
+                //     Language = "2"
+                 
+             };
+
+             //Implement by  Linq
+            //  ViewBag.Language = GetLanguage().Select(x => new SelectListItem(){
+            //      Text = x.Text,
+            //      Value = x.Id.ToString()
+            //  }).ToList();
+
+             ViewBag.Language = new List<SelectListItem>()
             {
-                Language = "English"
+                new SelectListItem(){Text = "Hindi", Value = "1" },
+                new SelectListItem(){Text = "English", Value = "2", Selected = true },
+                new SelectListItem(){Text = "Dutch", Value = "3", Disabled = true },
+                new SelectListItem(){Text = "Tamil", Value = "4", Disabled = true },
             };
             ViewBag.IsSuccess = isSuccess;
             ViewBag.BookId = bookId;
@@ -61,9 +78,21 @@ namespace WebBookStore.Controllers
                 }
             }
 
-            ModelState.AddModelError("", "This is my custom error message");
-            ModelState.AddModelError("", "This is my second custom error message");
+            ViewBag.Language = new SelectList(GetLanguage(), "Id", "Text");
+            // ModelState.AddModelError("", "This is my custom error message");
+            // ModelState.AddModelError("", "This is my second custom error message");
             return View();
+        }
+
+
+        private List<LanguageModel> GetLanguage()
+        {
+            return new List<LanguageModel>()
+            {
+                new LanguageModel(){ Id = 1, Text = "Hindi"},
+                new LanguageModel(){ Id = 2, Text = "English"},
+                new LanguageModel(){ Id = 3, Text = "Dutch"},
+            };
         }
     }
 }
